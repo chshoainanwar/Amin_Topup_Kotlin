@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_graph"
+    app:startDestination="@+id/HomeFragment">
+    <action
+        android:id="@+id/homeFragmentBase"
+        app:destination="@+id/HomeFragment"
+        app:popUpTo="@+id/HomeFragment"
+        app:popUpToInclusive="false" />
+    <action
+        android:id="@+id/action_historyFragment_to_confirmationStatusFragment"
+        app:destination="@id/confirmationStatusFragment" >
+        <argument
+            android:name="transaction_id"
+            app:argType="string" />
+    </action>
+    <action
+        android:id="@+id/actionHFToDetailFragment"
+        app:destination="@id/yourDetailsFragment">
+        <argument
+            android:name="operator"
+            app:argType="com.dev.amintopup.fragments.home.homeModel.HomeModel" />
+        <argument
+            android:name="number"
+            app:argType="string" />
+    </action>
+    <action
+        android:id="@+id/action_homeAmountFragment_to_orderSummaryFragment"
+        app:destination="@id/orderSummaryFragment" />
+
+
+    <action
+        android:id="@+id/actionToHomeAmountFragment"
+        app:destination="@id/homeAmountFragment">
+        <argument
+            android:name="operator"
+            app:argType="com.dev.amintopup.fragments.home.homeModel.HomeModel" />
+        <argument
+            android:name="number"
+            android:defaultValue="null"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            android:defaultValue="null"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            android:defaultValue="null"
+            app:argType="string" />
+    </action>
+    <action
+        android:id="@+id/actionToHome"
+        app:destination="@+id/HomeFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/actionToHistory"
+        app:destination="@+id/historyFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/actionToAccount"
+        app:destination="@+id/myAccountFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/actionToNotification"
+        app:destination="@+id/NotificationFragment"
+        app:launchSingleTop="true" />
+    <action
+        android:id="@+id/actionToPickContact"
+        app:destination="@+id/ContactPickerFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/actionToContactUs"
+        app:destination="@+id/ContactUsFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/actionToSetting"
+        app:destination="@+id/SettingFragment"
+        app:launchSingleTop="true" />
+
+    <action
+        android:id="@+id/actionToAboutTermPolicy"
+        app:destination="@+id/AboutTermPrivacyFragment">
+        <argument
+            android:name="TITLE"
+            android:defaultValue="About"
+            app:nullable="false" />
+        <argument
+            android:name="LINK"
+            android:defaultValue="https://www.google.com"
+            app:nullable="false" />
+    </action>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.dev.amintopup.fragments.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutTermPrivacyFragment"
+        android:name="com.dev.amintopup.fragments.menu.AboutTermPrivacyFragment"
+        tools:layout="@layout/frag_about_term_privacy" />
+    <fragment
+        android:id="@+id/NotificationFragment"
+        android:name="com.dev.amintopup.fragments.notifications.NotificationFragment"
+        tools:layout="@layout/frag_notification" />
+    <fragment
+        android:id="@+id/SettingFragment"
+        android:name="com.dev.amintopup.fragments.settings.SettingFragment"
+        tools:layout="@layout/frag_settings" />
+    <fragment
+        android:id="@+id/ContactUsFragment"
+        android:name="com.dev.amintopup.fragments.contactus.ContactUsFragment"
+        tools:layout="@layout/frag_contact_us" />
+    <fragment
+        android:id="@+id/ContactPickerFragment"
+        android:name="com.dev.amintopup.fragments.contactpicker.ContactPickerFragment"
+        tools:layout="@layout/frag_contact_list_pick" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.dev.amintopup.fragments.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history">
+
+    </fragment>
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.dev.amintopup.fragments.account.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account">
+        <action
+            android:id="@+id/action_myAccountFragment_to_editNameFragment"
+            app:destination="@id/editNameFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_editBirthdayFragment"
+            app:destination="@id/editBirthdayFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_editEmailFragment"
+            app:destination="@id/editEmailFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_editCountryFragment"
+            app:destination="@id/editCountryFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_editPhoneFragment"
+            app:destination="@id/editPhoneFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_AboutTermPrivacyFragment"
+            app:destination="@id/AboutTermPrivacyFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_ContactPickerFragment"
+            app:destination="@id/ContactPickerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationStatusFragment"
+        android:name="com.dev.amintopup.fragments.history.ConfirmationStatusFragment"
+        android:label="fragment_confirmation_status"
+        tools:layout="@layout/fragment_confirmation_status">
+        <action
+            android:id="@+id/action_confirmationStatusFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNameFragment"
+        android:name="com.dev.amintopup.fragments.account.EditNameFragment"
+        android:label="fragment_edit_name"
+        tools:layout="@layout/fragment_edit_name">
+        <action
+            android:id="@+id/action_editNameFragment_to_myAccountFragment"
+            app:destination="@id/myAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editBirthdayFragment"
+        android:name="com.dev.amintopup.fragments.account.EditBirthdayFragment"
+        android:label="fragment_edit_birthday"
+        tools:layout="@layout/fragment_edit_birthday">
+        <action
+            android:id="@+id/action_editBirthdayFragment_to_myAccountFragment"
+            app:destination="@id/myAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editEmailFragment"
+        android:name="com.dev.amintopup.fragments.account.EditEmailFragment"
+        android:label="fragment_edit_email"
+        tools:layout="@layout/fragment_edit_email">
+        <action
+            android:id="@+id/action_editEmailFragment_to_myAccountFragment"
+            app:destination="@id/myAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCountryFragment"
+        android:name="com.dev.amintopup.fragments.account.EditCountryFragment"
+        android:label="fragment_edit_country"
+        tools:layout="@layout/fragment_edit_country">
+        <action
+            android:id="@+id/action_editCountryFragment_to_myAccountFragment"
+            app:destination="@id/myAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourDetailsFragment"
+        android:name="com.dev.amintopup.fragments.yourDetails.YourDetailsFragment"
+        android:label="fragment_your_details"
+        tools:layout="@layout/fragment_your_details">
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeAmountFragment"
+        android:name="com.dev.amintopup.fragments.yourDetails.HomeAmountFragment"
+        android:label="fragment_home_amount"
+        tools:layout="@layout/fragment_home_amount">
+        <action
+            android:id="@+id/action_homeAmountFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+        <action
+            android:id="@+id/action_homeAmountFragment_to_editPhoneFragment"
+            app:destination="@id/editPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.dev.amintopup.fragments.orderSummary.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary">
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_editPhoneFragment"
+            app:destination="@id/editPhoneFragment" />
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" >
+            <argument
+                android:name="URL"
+                android:defaultValue="About"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/editPhoneFragment"
+        android:name="com.dev.amintopup.fragments.account.EditPhoneFragment"
+        android:label="fragment_edit_phone"
+        tools:layout="@layout/fragment_edit_phone" >
+        <action
+            android:id="@+id/action_editPhoneFragment_to_orderSummaryFragment2"
+            app:destination="@id/orderSummaryFragment" >
+        </action>
+        <action
+            android:id="@+id/action_editPhoneFragment_to_homeAmountFragment2"
+            app:destination="@id/homeAmountFragment" >
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.dev.amintopup.fragments.webView.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+</navigation>

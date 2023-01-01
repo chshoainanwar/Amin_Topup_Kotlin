@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_music"
+        android:checked="true"
+        android:icon="@drawable/flag_honduras"
+        android:title="@string/history" />
+
+    <!--must set the item title to empty-->
+    <item
+        android:id="@+id/i_empty"
+        android:title="" />
+
+    <item
+        android:id="@+id/i_visibility"
+        android:icon="@drawable/flag_afghanistan"
+        android:title="@string/account" />
+</menu>

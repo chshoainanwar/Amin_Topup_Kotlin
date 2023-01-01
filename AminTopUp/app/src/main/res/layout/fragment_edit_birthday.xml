@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_appbg"
+    tools:context=".fragments.account.EditBirthdayFragment">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar_layout" />
+
+    <include
+        android:id="@+id/rlAddBirthday"
+        layout="@layout/edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/bg_line"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="Date of birth"
+            android:textColor="@color/lightGrayClr"
+            android:textSize="@dimen/_12sdp" />
+
+        <sh.tyy.wheelpicker.DatePickerView
+            android:id="@+id/day_time_picker_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_175sdp"
+            android:layout_below="@+id/tvDob"
+            android:background="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableTop="@drawable/bg_line"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:minHeight="@dimen/_50sdp"
+            android:text="Confirm"
+            android:textColor="@color/orangeClr"
+            android:textSize="@dimen/_12sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

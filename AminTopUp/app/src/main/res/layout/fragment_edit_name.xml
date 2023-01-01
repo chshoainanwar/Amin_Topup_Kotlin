@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_appbg"
+    tools:context=".fragments.account.EditNameFragment">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar_layout" />
+
+    <include
+        android:id="@+id/rlEditName"
+        layout="@layout/edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <include
+        android:id="@+id/rlEditSurName"
+        android:layout_below="@+id/rlEditName"
+        layout="@layout/edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/poppins_regular"
+        android:minHeight="@dimen/_40sdp"
+        android:text="Save"
+        android:backgroundTint="@color/orangeClr"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

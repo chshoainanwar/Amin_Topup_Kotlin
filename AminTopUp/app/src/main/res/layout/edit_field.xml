@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <RelativeLayout
+        android:id="@+id/rlField"
+        android:layout_below="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_edit_field">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your e-Mail"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

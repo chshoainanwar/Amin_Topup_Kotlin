@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--    <style name="Base.Theme.AminTopUp" parent="Theme.Material3.DayNight.NoActionBar">-->
+    <style name="Base.Theme.AminTopUp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">@color/my_dark_primary</item>
+    </style>
+
+    <style name="Theme.AminTopUp" parent="Base.Theme.AminTopUp" />
+
+
+    <color name="text_wheel_disable_text_color">#ACACAC</color>
+    <color name="text_wheel_highlight_bg_color">#11000000</color>
+    <color name="text_wheel_text_color">@android:color/black</color>
+    <color name="wheel_action_sheet_bg_color">@android:color/white</color>
+
+</resources>

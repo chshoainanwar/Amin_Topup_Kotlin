@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Amin Topup</string>
+    <string name="app_name_clr"><font color='#F89822'>Amin</font> Topup</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="forfloatinginfo">ForFloatingInfo</string>
+    <string name="log_in_to">Log in to</string>
+    <string name="don_t_have_account_sign_up">Don’t have account?<b><b><font face="Poppins Bold"> Sign Up</font></b></b></string>
+    <string name="already_have">Already have an account?<b><b><font face="Poppins Bold"> Sign in</font></b></b></string>
+    <string name="verification_code"><font color='#F89822'>Verification</font> Code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">History</string>
+    <string name="account">Account</string>
+    <string name="topup"><b>Topup</b></string>
+    <string name="receiver_gets_after_tax">Receiver gets (<font color='#0BA2F6'>after Tax</font>)</string>
+    <string name="Privacy1">Priacy notice</string>
+    <string name="Privacy2">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Privacy3">About</string>
+    <string name="Privacy4">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Privacy5">How can you get in with Amin?</string>
+    <string name="Privacy6">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Privacy7">Scope of Amin’s Privacy notice?</string>
+    <string name="Privacy8">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Terms1">Introdution</string>
+    <string name="Terms2">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Terms3">Info about Us</string>
+    <string name="Terms4">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Terms5">Registration</string>
+    <string name="Terms6">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="Terms7">Your data</string>
+    <string name="Terms8">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="About1">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="About2">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="About3">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+    <string name="About4">Lorem ipsum is a placeholder text commonly
+used to demonstrate the visual form of a
+document or a typeface without relying on
+meaningful content. Lorem ipsum may be used
+as a placeholder before final copy is available.</string>
+</resources>

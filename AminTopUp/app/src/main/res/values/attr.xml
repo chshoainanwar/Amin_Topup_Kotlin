@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="simpletooltip_overlay_alpha">120</integer>
+    <integer name="simpletooltip_animation_duration">800</integer>
+
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+    <dimen name="simpletooltip_arrow_height">15dp</dimen>
+    <dimen name="simpletooltip_arrow_width">30dp</dimen>
+    <dimen name="simpletooltip_margin">10dp</dimen>
+    <dimen name="simpletooltip_overlay_offset">10dp</dimen>
+    <dimen name="simpletooltip_padding">8dp</dimen>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium" />
+
+    <color name="simpletooltip_arrow">@color/my_dark_primary</color>
+    <color name="simpletooltip_background">@color/white</color>
+    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+
+    <declare-styleable name="CircularWheelView">
+        <attr name="wheel_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_item_selected_text_color" format="color" />
+        <attr name="wheel_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CenterEdgeItemsRecyclerView">
+        <attr name="bezel_width" format="fraction"/>
+        <attr name="circular_scrolling_gesture_enabled" format="boolean"/>
+        <attr name="scroll_degrees_per_screen" format="float"/>
+    </declare-styleable>
+</resources>

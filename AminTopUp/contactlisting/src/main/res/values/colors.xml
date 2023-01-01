@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--other colors-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="textColorBlack2">#ff272727</color>
+    <color name="textColorBlack">#ff000000</color>
+
+    <color name="lightClr">#F8F8F8</color>
+    <color name="btmUnselected">#B9B9B9</color>
+    <color name="lightStrokeClr">#E5E5E5</color>
+    <color name="darkStrokeAndTextClr">#001933</color>
+    <color name="disableClr">#A6A6A6</color>
+    <color name="lightGrayClr">#7F7F92</color>
+    <color name="light_blue">#F1F8FF</color>
+    <color name="parrotGreenClr">#34C759</color>
+    <color name="arrow">#346E96</color>
+</resources>

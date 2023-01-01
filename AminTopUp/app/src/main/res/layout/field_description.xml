@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInfoField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Description"
+            android:textColor="@color/darkStrokeAndTextClr"
+            android:textSize="@dimen/_12sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rlField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/bg_simple_field"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:hint="Type here..."
+                android:inputType="text|textCapSentences|textImeMultiLine|textMultiLine|textLongMessage"
+                android:maxLines="10"
+                android:minLines="5"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:text="Enter valid phone number!"
+            android:textColor="@color/redClr"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

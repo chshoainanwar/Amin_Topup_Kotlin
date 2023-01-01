@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="true">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/rlMedia"-->
+<!--        android:layout_width="@dimen/_80sdp"-->
+<!--        android:layout_height="@dimen/_80sdp"-->
+<!--        android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:animateLayoutChanges="true"-->
+<!--        android:animationCache="true"-->
+<!--        android:background="@drawable/whole_corner"-->
+<!--        android:clipChildren="false"-->
+<!--        android:clipToOutline="false"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:padding="@dimen/_10sdp"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="@dimen/_40sdp"-->
+<!--        app:cardElevation="@dimen/_1sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clipToOutline="false"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLoaderDot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignStart="@+id/ivLoader"
+            android:layout_alignTop="@+id/ivLoader"
+            android:layout_alignEnd="@+id/ivLoader"
+            android:layout_alignBottom="@+id/ivLoader"
+            android:adjustViewBounds="false"
+            android:clipToOutline="false"
+            android:paddingHorizontal="@dimen/_minus5sdp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loader" />
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLoaderText"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="Uploading your post"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</RelativeLayout>

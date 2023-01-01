@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_btn.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_edit_field.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_focus_field.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_home_phone.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_home_phone2.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_simple_field.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/bg_summary.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/circle_shape.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/circle_shape1.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_appbg.xml" value="0.2165" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_arrow.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_arrow_back_ios.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_arrow_down.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_arrow_down_white.xml" value="0.154" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_iv_right_arrow.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_mail.xml" value="0.2245" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/drawable/ic_menu_profile.xml" value="0.2775" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/activity_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/btm_view.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/category_item.xml" value="0.271875" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/content_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/country_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/dialog_after_tax.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/dialog_card.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/dialog_error.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/dialog_succcessfull.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/dialogue_success_password.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/edit_field.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/field_country.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/field_description.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/field_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/field_phone.xml" value="0.5" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_about_term_privacy.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_change_birthday.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_contact_list_pick.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_contact_us.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_demo_wheel.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_frogot_password.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_new_password.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_notification.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_settings.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_signup.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_splash.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/frag_verify_pin.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_confirmation_status.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_edit_birthday.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_edit_country.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_edit_email.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_edit_name.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_edit_phone.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_history.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_home_amount.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_my_account.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_order_summary.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_web_view.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_webview.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/fragment_your_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/home_dashboard.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/item_all_topup.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/item_loader.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/item_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/item_notification.xml" value="0.2586050724637681" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/layout_category.xml" value="0.271875" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/menu_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/popup.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/row_rv_text.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/top_bar.xml" value="0.3175182481751825" />
+        <entry key="..\:/AndroidStudio/Gits/amintopupandroid/AminTopUp/app/src/main/res/layout/top_bar_layout.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

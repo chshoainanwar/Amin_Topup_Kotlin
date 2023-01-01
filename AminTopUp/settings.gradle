@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "AminTopUp"
+include ':ccp'
+//include ':widget'
+include ':WheelViewLib'
+include ':contactlisting'
+include ':carouselview'
+include ':android-networking'
+include ':zz-letters-sidebar'
+include ':library'
+include ':app'

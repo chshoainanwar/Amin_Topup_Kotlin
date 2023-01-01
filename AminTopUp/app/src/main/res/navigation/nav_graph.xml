@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/FirstFragment">
+
+    <action
+        android:id="@+id/actionToHome"
+        app:destination="@+id/DashboardActivity"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/bottom_graph"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/actionToLogin"
+        app:destination="@+id/LoginFragment" />
+    <action
+        android:id="@+id/actionToAboutTermPolicy"
+        app:destination="@+id/AboutTermPrivacyFragment">
+        <argument
+            android:name="TITLE"
+            android:defaultValue="About"
+            app:nullable="false" />
+        <argument
+            android:name="LINK"
+            android:defaultValue="https://www.google.com"
+            app:nullable="false" />
+    </action>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.dev.amintopup.fragments.SplashFragment"
+        tools:layout="@layout/frag_splash">
+        <action
+            android:id="@+id/actionSplashToIntro"
+            app:destination="@+id/IntroFragment" />
+        <action
+            android:id="@+id/actionSplashToDemo"
+            app:destination="@+id/DemoWheelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IntroFragment"
+        android:name="com.dev.amintopup.fragments.auth.IntroFragment"
+        tools:layout="@layout/frag_intro">
+        <action
+            android:id="@+id/actionIntroToLogin"
+            app:destination="@+id/LoginFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.dev.amintopup.fragments.auth.LoginFragment"
+        tools:layout="@layout/frag_login">
+        <action
+            android:id="@+id/actionLoginToForgot"
+            app:destination="@+id/ForgotFragment" />
+        <action
+            android:id="@+id/actionLoginToSignup"
+            app:destination="@+id/SignUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ForgotFragment"
+        android:name="com.dev.amintopup.fragments.auth.ForgotPasswordFragment"
+        tools:layout="@layout/frag_frogot_password">
+        <action
+            android:id="@+id/actionForgotToVerify"
+            app:destination="@+id/VerifyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/VerifyFragment"
+        android:name="com.dev.amintopup.fragments.auth.VerifyPinFragment"
+        tools:layout="@layout/frag_verify_pin">
+        <action
+            android:id="@+id/actionVerifyToNewPassword"
+            app:destination="@+id/NewPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NewPasswordFragment"
+        android:name="com.dev.amintopup.fragments.auth.NewPasswordFragment"
+        tools:layout="@layout/frag_new_password" />
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.dev.amintopup.fragments.auth.SignUpFragment"
+        tools:layout="@layout/frag_signup" />
+
+    <fragment
+        android:id="@+id/DemoWheelFragment"
+        android:name="com.dev.amintopup.fragments.DemoWheelFragment"
+        tools:layout="@layout/frag_demo_wheel" />
+    <fragment
+        android:id="@+id/AboutTermPrivacyFragment"
+        android:name="com.dev.amintopup.fragments.menu.AboutTermPrivacyFragment"
+        tools:layout="@layout/frag_about_term_privacy" />
+
+    <activity
+        android:id="@+id/DashboardActivity"
+        android:name="com.dev.amintopup.fragments.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>

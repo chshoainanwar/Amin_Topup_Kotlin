@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_appbg"
+    tools:context=".fragments.account.MyAccountFragment">
+
+    <RelativeLayout
+        android:id="@+id/llTopView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="My Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@+id/tvMyAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:elevation="@dimen/_5sdp"
+            android:src="@drawable/iv_men"
+            app:civ_border_color="@color/white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileCountry"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@+id/ivProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="-40dp"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:elevation="@dimen/_5sdp"
+            android:src="@drawable/flag_peru"
+            app:civ_border_width="0dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfileCountry"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/bg_profile"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:backgroundTint="@color/orangeClr"
+                android:background="@drawable/bg_corner_all"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Add Photo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="1"
+                android:text="My details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMyDetails"
+                android:scrollbars="none">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvNameLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="Name"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvNameLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="Fill in your name"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivNameEdit"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_iv_name_edit" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvBirthdayLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="Birthday"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvBirthday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvBirthdayLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="Fill in your birthday"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivAddBirthday"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_iv_add_birthday" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvPhoneNumberLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="Phone Number"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvPhoneNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvPhoneNumberLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="Fill in your phone number"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvSellPop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvPhoneNumber"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="self topup easly"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivPhoneNumber"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_iv_add_phone" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvEmailLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="Email"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvEmailLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="Fill in your email"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivEmailEdit"
+                                android:visibility="gone"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_iv_name_edit" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCountryLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:maxLines="1"
+                                android:text="Country"
+                                android:textColor="@color/report_text"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCountry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvCountryLabel"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:hint="Select your country"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivCountryEdit"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_iv_name_edit" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

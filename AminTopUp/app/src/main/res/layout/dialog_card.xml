@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="24dp"
+    android:paddingTop="34dp"
+    android:background="@drawable/bg_corner"
+    android:paddingHorizontal="15dp">
+
+    <TextView
+        android:id="@+id/tvCardLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your payment Info"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/darkStrokeAndTextClr" />
+
+    <EditText
+        android:id="@+id/etCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tvCardLabel"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_simple_field"
+        android:drawableEnd="@drawable/ic_card_number"
+        android:hint="Card Number"
+        android:inputType="phone"
+        android:maxLength="19"
+        android:textSize="14sp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textColor="@color/card_text"
+        android:textColorHint="@color/card_text" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llCardDetails"
+        android:layout_below="@+id/etCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_simple_field">
+
+            <EditText
+                android:id="@+id/etCardDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="MM/YY"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:paddingHorizontal="20dp"
+                android:singleLine="true"
+                android:textColor="@color/card_text"
+                android:textColorHint="@color/card_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/bg_simple_field">
+
+            <EditText
+                android:id="@+id/etCardCVV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="CVV"
+                android:inputType="number"
+                android:maxLength="3"
+                android:drawableEnd="@drawable/ic_cvc"
+                android:paddingHorizontal="20dp"
+                android:singleLine="true"
+                android:textColor="@color/card_text"
+                android:textColorHint="@color/card_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tvCountryLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llCardDetails"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="14sp"
+        android:text="Country or region"
+        android:textColor="@color/card_text" />
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tvCountryLabel"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_simple_field"
+        android:focusable="false"
+        android:hint="Afghanistan"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textColor="@color/card_text"
+        android:textColorHint="@color/card_text" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCountry"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/bg_btn"
+        android:backgroundTint="@color/darkStrokeAndTextClr"
+        android:fontFamily="@font/poppins_regular"
+        android:minHeight="@dimen/_40sdp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

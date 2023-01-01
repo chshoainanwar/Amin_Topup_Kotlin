@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInfoField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Phone Number"
+            android:textColor="@color/darkStrokeAndTextClr"
+            android:textSize="@dimen/_12sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rlField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/bg_simple_field"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/llOther"
+                android:background="@android:color/transparent"
+                android:digits="0123456789 "
+                android:fontFamily="@font/poppins_regular"
+                android:hint="000 000 0000"
+                android:inputType="number|phone"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:minHeight="@dimen/_40sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlRightArrow"
+                android:visibility="gone"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/circle_shape"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_20sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRightArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_iv_right_arrow"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccpDialog_showFlag="true"
+                    app:ccp_arrowColor="@color/lightGrayClr"
+                    app:ccp_autoDetectCountry="false"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_autoFormatNumber="true"
+                    app:ccp_countryPreference="in"
+                    app:ccp_showArrow="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_defaultNameCode="AF"
+                    app:ccp_textSize="@dimen/_12sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivFields"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_flag"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPhoneCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical"
+                    android:text="92+"
+                    android:textColor="@color/lightGrayClr"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDropDown"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:rotation="270"
+                    android:src="@drawable/ic_arrow_down"
+                    android:tint="@color/lightGrayClr" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@color/lightStrokeClr" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:text="Enter valid phone number!"
+            android:textColor="@color/redClr"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="invisible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
